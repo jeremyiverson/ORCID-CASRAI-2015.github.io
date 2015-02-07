@@ -26,4 +26,19 @@ $(document).ready(function (){
 
   new WOW().init();
 
+  var scrollIt = function(){
+    var sections = $('.section').length;
+    console.log(sections);
+
+    //review
+    $('section').click(function(){
+        $('body').scrollTo('this',{duration:'slow', offsetTop : '50'})
+    });
+
+
+
+  }
+
+  scrollIt();
+
 });
