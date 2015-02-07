@@ -31,8 +31,13 @@ $(document).ready(function (){
     console.log(sections);
 
     //review
-    $('section').click(function(){
-        $('body').scrollTo('this',{duration:'slow', offsetTop : '50'})
+    $('.navbar-right a').click(function(e){
+        e.preventDefault();
+        var section =  $(this).attr('data-section');
+        $('html, body').animate({
+            scrollTop: $('#'+section).offset().top-50 + "px"
+        }, 2000);
+
     });
 
 

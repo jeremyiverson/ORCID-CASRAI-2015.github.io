@@ -136,7 +136,6 @@ ul.nav li a,
   height: 300px;
   position: relative;
   width: 100%;
-  margin: -30px auto 0 auto;
 }
 
 #where{
@@ -186,7 +185,7 @@ ul.nav li a,
 
 
 #why {
-  background-color: #306d9f;
+  background-color: #338caf;
   color: #FFF;
 }
 
