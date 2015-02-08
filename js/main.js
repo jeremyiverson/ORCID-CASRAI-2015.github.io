@@ -36,8 +36,10 @@ $(document).ready(function (){
 
     //review
     $('.navbar-right a').click(function(e){
-        e.preventDefault();
         var section =  $(this).attr('data-section');
+        if (section == 'git') return true;
+        e.preventDefault();
+        
         $('html, body').animate({
             scrollTop: $('#'+section).offset().top-50 + "px"
         }, 2000);
