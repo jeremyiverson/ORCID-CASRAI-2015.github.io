@@ -31,11 +31,8 @@ $(document).ready(function (){
   new WOW().init();
 
   var scrollIt = function(){
-    var sections = $('.section').length;
-    console.log(sections);
-
-    //review
-    $('.navbar-right a').click(function(e){
+    
+    $('a[data-section]').click(function(e){
         var section =  $(this).attr('data-section');
         if (section == 'git') return true;
         e.preventDefault();
