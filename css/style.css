@@ -141,9 +141,13 @@ ul.nav li a,
 }
 
 #where{
-  height: 520px;
+  height: 300px;
   position: relative;
   display: block;
+}
+
+#where #map{
+  height: 300px;
 }
 
 #where .title{
@@ -157,10 +161,6 @@ ul.nav li a,
 
 #where .title h2{
   text-align: center;
-}
-
-#where #map{
-  height: 520px;
 }
 
 #schedule {
@@ -244,6 +244,11 @@ footer .glyphicon:hover {
 
   #who table{
    font-size: 18px;
+  }
+
+  #where,
+  #where #map{
+    height: 520px;    
   }
 
 }
