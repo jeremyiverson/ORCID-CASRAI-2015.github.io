@@ -1,8 +1,7 @@
 ﻿@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
-/* general styles */
+
 html, body {
   height: 100%;
-  width: 100%;
   color: #939598;
   font-family: 'Roboto Condensed', sans-serif;
 }
@@ -25,37 +24,37 @@ p{
   font-size: 18px;
 }
 
-.custom-buttom{
+.button-container{
+  display: block;
+  margin-top: 40px;
+}
+
+.custom-button{
+  margin-top: 15px;
   padding: 10px 15px;
-  background: #A6CE39;
+  background: #e47d00;
   color: #FFF;
   font-size: 20px;
   text-transform: uppercase;
 }
 
-.custom-buttom:hover,
-.custom-buttom:focus{
+.custom-button:hover,
+.custom-button:focus{
   background: #FFF;
-  color: #A6CE39;
+  color: #e47d00;
   text-decoration: none;
 }
 
-/* padded section */
 .pad-section {
-  padding: 30px 0;
-}
-
-.pad-section img {
-  width: 100%;
+  padding: 20px 0;
 }
 
 .inner-section{
   padding: 50px 0 0 0;
 }
 
-/* vertical-centered text */
 .centered {
-  display: table-cell;
+  margin: 0 auto;
   text-align: center;
   vertical-align: middle;
 }
@@ -70,6 +69,10 @@ p{
 
 .blue{
   color: #338caf;
+}
+
+.orange{
+  color: #e47d00 !important;
 }
 
 .navbar{
@@ -105,7 +108,7 @@ ul.nav li a,
 }
 
 .date .day{
-  color: #A6CE39;
+  color: #e47d00;
   font-size: 98px;
   line-height: 80px;
 
@@ -115,41 +118,49 @@ ul.nav li a,
   font-size: 24px;
 }
 
-
-
-/* Sections */
-
 #home {
   background: url(../images/top-bg.jpg) no-repeat center center fixed; 
-  display: table;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
   height: 100%;
+  line-height: 100%;
   position: relative;
-  width: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
+#home p{
+  color: #FFF;
+}
+
 #when {
   background-color: #FFF;
   height: 300px;
   position: relative;
-  width: 100%;
 }
 
 #where{
-  height: 500px;
+  height: 520px;
   position: relative;
+  display: block;
 }
 
 #where .title{
   position: absolute;
   left: 0;
   top: 0;
-  width: 100%;
   background: transparent;
   z-index: 1000;
+  width: 100%;
 }
 
 #where .title h2{
@@ -157,17 +168,15 @@ ul.nav li a,
 }
 
 #where #map{
-  height: 500px;
+  height: 520px;
 }
-
-
 
 #schedule {
   background: url(../images/footer-bg.jpg) no-repeat center center fixed;
-  display: table;
-  height: 400px;
+  display: block;
+  min-height: 400px;
+  height: auto;
   position: relative;
-  width: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -187,11 +196,18 @@ ul.nav li a,
 #why {
   background-color: #338caf;
   color: #FFF;
+  min-height: 330px;
+  height: auto;
+  padding-bottom: 20px;
 }
 
 #who{
   background-color: #A6CE39;
   color: #FFF;
+}
+
+#sponsors{
+  padding-bottom: 20px;
 }
 
 #git{
@@ -200,8 +216,15 @@ ul.nav li a,
 }
 
 footer {
-  padding: 20px 0;
+  height: 40px;
+  padding-top: 7px;
+  background: #e47d00;
 }
+
+footer p{
+  color: #FFF;
+}
+
 footer .glyphicon {
   color: #333333;
   font-size: 60px;
