@@ -42,11 +42,12 @@ $(document).ready(function (){
         }, 2000);
 
     });
-
-
-
   }
 
   scrollIt();
+
+  $("#schedule").lazyload({
+      effect : "fadeIn"
+  });
 
 });

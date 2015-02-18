@@ -17,7 +17,7 @@ h1{
 h2{
   text-transform: uppercase;
   color: #338caf;
-  font-size: 3em;
+  font-size: 2em;
 }
 
 p{
@@ -164,15 +164,16 @@ ul.nav li a,
 }
 
 #schedule {
-  background: url(../images/footer-bg.jpg) no-repeat center center fixed;
+  /*background: url(../images/footer-bg.jpg) no-repeat center center fixed;*/
   display: block;
-  min-height: 400px;
+  min-height: 800px;
   height: auto;
   position: relative;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  width: 100%;
 }
 
 #schedule table{
@@ -234,6 +235,10 @@ footer .glyphicon:hover {
     font-size: 5em;
   }
 
+  h2{
+    font-size: 4em;
+  }
+
   .date.first-date{
     float: right;
   }
@@ -242,13 +247,23 @@ footer .glyphicon:hover {
     float: left;    
   }
 
+  #who, #why, #where,
+  #where #map{
+    min-height: 900px;
+    height: auto;  
+  }
+
   #who table{
    font-size: 18px;
   }
 
-  #where,
-  #where #map{
-    height: 520px;    
+  #why .container,
+  #who .container{
+    padding-top: 100px
+  }
+
+  #when #dates{
+    height: 260px;
   }
 
 }
