@@ -34,13 +34,10 @@ $(document).ready(function (){
     
     $('a[data-section]').click(function(e){
         var section =  $(this).attr('data-section');
-        if (section == 'git') return true;
-        e.preventDefault();
-        
+        e.preventDefault();        
         $('html, body').animate({
             scrollTop: $('#'+section).offset().top-50 + "px"
         }, 2000);
-
     });
   }
 
