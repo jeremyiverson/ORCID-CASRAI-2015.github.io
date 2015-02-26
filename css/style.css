@@ -28,7 +28,7 @@ p{
 
 .button-container{
   display: block;
-  margin-top: 40px;
+  margin: 40px 0;
 }
 
 .custom-button{
