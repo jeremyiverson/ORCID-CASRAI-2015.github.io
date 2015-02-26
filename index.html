@@ -41,9 +41,7 @@
     </div>
   </nav>
 
-  <div id="register" class="hidden-xs">
-    <iframe  src="https://www.eventbrite.com/countdown-widget?eid=15823611849" frameborder="0" height="291" width="195" marginheight="0" marginwidth="0" scrolling="no" allowtransparency="true"></iframe>    
-  </div>
+  
 
   <div id="home">    
     <div class="centered">
@@ -64,27 +62,44 @@
       <div class="container">
         <h2 class="text-center">When</h2>
         <div class="row">
-            <div class="col-sm-6 col-xs-12">              
-                <div class="date wow flipInX first-date">
+            <div class="col-sm-12">                
+              <ul class="dates">
+                <li>
+                    <div class="date wow flipInX first-date">
+                        <div class="month">
+                          MAY
+                        </div>
+                        <div class="day">
+                          18
+                        </div>
+                    </div>               
+                </li>
+                <li>
+                  <div class="date wow flipInX">
                     <div class="month">
                       MAY
                     </div>
                     <div class="day">
-                      18
+                      19
                     </div>
-                </div>                            
-            </div>
-            <div class="col-sm-6 col-xs-12">
-              <div class="date wow flipInX second-date">
-                  <div class="month">
-                    MAY
-                  </div>
-                  <div class="day">
-                    19
-                  </div>
-              </div> 
-            </div>
-        </div>        
+                  </div> 
+                </li>
+                <li class="last-date-info">
+                  <div class="date wow flipInX">
+                      <div id="register">
+                        <div id="register-container">
+                          <iframe  src="https://www.eventbrite.com/countdown-widget?eid=15823611849" frameborder="0" height="291" width="195" marginheight="0" marginwidth="0" scrolling="no" allowtransparency="true"></iframe>
+                        </div>
+                        <div class="register-message">
+                          <a href="https://www.eventbrite.com/e/orcid-casrai-joint-conference-codefest-may-2015-tickets-15823611849?ref=ecount" title="ORCID CASRAI Code Fest Registration" target="_blank">Register now!</a>
+                        </div>                        
+                      </div>                      
+                  </div> 
+
+                </li>
+              </ul>
+          </div>        
+          </div>
       </div>
     </div>
   
@@ -279,8 +294,15 @@
               </tr>
               -->
             </tbody>
-          </table>          
+          </table>                    
           </div>
+          <div class="row">
+            <div class="col-sm-12 col-xs-12">
+                <div class="button-container text-center">
+                    <a href="#" data-section="when" class="custom-button">Register now!</a>         
+                </div>
+            </div>
+          </div>    
         </div>
       </div>
     </div>

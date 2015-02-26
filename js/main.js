@@ -30,8 +30,7 @@ $(document).ready(function (){
   
   new WOW().init();
 
-  var scrollIt = function(){
-    
+  var scrollIt = function(){    
     $('a[data-section]').click(function(e){
         var section =  $(this).attr('data-section');
         e.preventDefault();        
@@ -40,7 +39,6 @@ $(document).ready(function (){
         }, 2000);
     });
   }
-
   scrollIt();
 
   $("#schedule").lazyload({
@@ -48,3 +46,4 @@ $(document).ready(function (){
   });
 
 });
+

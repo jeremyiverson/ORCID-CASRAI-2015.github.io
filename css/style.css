@@ -96,9 +96,13 @@ ul.nav li a,
    height: 150px;
    text-align: center;   
    clear: both;
-   border: 1px solid #eee;   
+   border: 2px solid #eee;   
    margin: 0 auto;
    margin-bottom: 15px;
+}
+
+.last-date-info{  
+  vertical-align: top;
 }
 
 .date .day{
@@ -137,11 +141,44 @@ ul.nav li a,
 }
 
 #register{
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  z-index: 99999;
+  z-index: 99999;  
+  margin: 10px;  
+  overflow: hidden;  
+  margin: -4px;
+  line-height: 80px;
+}
 
+#register #register-container{
+  position: relative;
+  width: 130px;
+  height: 105px;  
+  overflow: hidden;
+  float: left;
+}
+
+#register .register-message{
+  vertical-align: top;
+  line-height: 19px;  
+}
+
+#register .register-message a{
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#register #register-container iframe{
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  -ms-zoom: 0.75;
+  -moz-transform: scale(0.75);
+  -moz-transform-origin: 0 0;
+  -o-transform: scale(0.75);
+  -o-transform-origin: 0 0;
+  -webkit-transform: scale(0.75);
+  -webkit-transform-origin: 0 0;
 }
 
 #when {
@@ -239,6 +276,13 @@ footer .glyphicon:hover {
   color: #306d9f;
 }
 
+ul.dates{
+    text-align: center;
+    margin: 0;    
+    list-style-type: none;
+    padding: 0;
+}
+
 @media (min-width: 768px) {
   h1{
     font-size: 5em;
@@ -248,12 +292,9 @@ footer .glyphicon:hover {
     font-size: 4em;
   }
 
-  .date.first-date{
-    float: right;
-  }
-  
-  .date.second-date{
-    float: left;    
+  ul.dates li{
+    display: inline-block;    
+    margin: 0 10px;
   }
 
   #who, #why, #where,
